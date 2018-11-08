@@ -81,8 +81,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        sleepstart.setText(sharedpreferences.getString("sleep", "sleep at"));
-        sleepstop.setText(sharedpreferences.getString("wake", "wake at"));
+        sleepstart.setText("sleep at-->"+sharedpreferences.getString("sleep", "sleep at"));
+        sleepstop.setText("wake at-->"+sharedpreferences.getString("wake", "wake at"));
     }
 
     @Override
