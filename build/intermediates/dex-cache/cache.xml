@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Storage\SleepDetection\SleepWell-master\app\libs\musicg-1.4.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e4cc5194d9313717e173c63eb38dd220a63b5532">
+        <dex dex="C:\Storage\SleepDetection\SleepWell-master\app\build\intermediates\pre-dexed\debug\musicg-1.4.2.0_71b635a0571af52770298b6eb1398316238e9730.jar" />
+    </item>
+
+</items>
