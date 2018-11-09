@@ -2,6 +2,7 @@ package com.haneet.sleepwell.services;
 
 import android.Manifest;
 import android.app.AlarmManager;
+import android.app.KeyguardManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
@@ -150,7 +151,9 @@ public class SleepDetectionService extends Service implements SensorEventListene
 
 //                 txtAbs.setText(msg.obj.toString());
                 int interval = 1;
-                if (frequencySound < 2000 && accelationSquareRoot < 3) {
+                KeyguardManager myKM = (KeyguardManager) getApplicationContext().getSystemService(Context.KEYGUARD_SERVICE);
+
+                if (frequencySound < 2000 && accelationSquareRoot < 3&& myKM.inKeyguardRestrictedInputMode()) {
 
                    /* Log.d("Start Snore", ++snorcound + "");
 
